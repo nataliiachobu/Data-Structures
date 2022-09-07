@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class BigOSingleLoop {
     public static void main(String[] args) {
         long numberOfOperations=0;
