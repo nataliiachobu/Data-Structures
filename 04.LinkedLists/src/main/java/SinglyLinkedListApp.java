@@ -8,7 +8,9 @@ public class SinglyLinkedListApp {
         for (int i = 0; i < 10; i++) {
             mylist.add(i);
         }
-       mylist.printNodes();
-        ArrayList<Integer> blist=new ArrayList<>();
+        mylist.printNodes();
+
+
+
     }
 }

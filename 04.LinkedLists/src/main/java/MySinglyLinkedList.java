@@ -23,7 +23,41 @@ public class MySinglyLinkedList {
         }
 
     }
-  void printNodes(){
+    void deleteById(int id){
+        // check if empty
+        if(isEmpty()) System.out.println("List is empty!!!");
+        // assign prev and current with the head
+
+        Node prev=head;
+        Node current=head;
+        while(current!=null){
+            if(current.id==id){// there is a match
+                //case 1: head
+                if(current==head){
+                    head=current.next;
+                    current.next=null;
+                }
+                // case 2 : tail
+                else if(current==tail){
+                    tail=prev;
+                    prev.next=null;//Ex -Tail will be eligible for Garbage Collection
+                }
+                // case 3 : middle
+                else{
+                    prev.next=current.next;
+                    current.next=null;// Current will be eligible for Garbage Collection
+                }
+                // after deletion
+                size--;
+            }
+            // move forward on the elements of the list
+            prev=current;
+            current=current.next;
+
+        }
+
+    }
+    void printNodes(){
         Node current=head;
         while(current!=null){
             if (current.next==null) System.out.println(current.id+"=> null");
