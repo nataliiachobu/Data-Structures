@@ -147,7 +147,6 @@ public class MySinglyLinkedList {
     public void removeKthFromLast2(int k){
         Node ptr1=head;
         Node ptr2=head;
-
         for(int i=0;i<k-1;i++) {
 
             ptr2=ptr2.next;
@@ -160,7 +159,6 @@ public class MySinglyLinkedList {
                 return;
             }
         }
-
         while(ptr2.next.next!=null) {
 
             ptr1=ptr1.next;
