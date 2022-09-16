@@ -9,7 +9,12 @@ public class MySinglyLinkedList {
         return head == null;
     }
 
-
+  void addFirst(int data){
+      // create a new node object from data
+     // case 1: list empty
+      // case 2 : list is not empty
+      //increase size
+  }
     void add(int data) {
         // create a new node object from data
         Node node = new Node(data);
