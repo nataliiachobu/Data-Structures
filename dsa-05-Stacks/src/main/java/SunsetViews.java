@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class SunsetViews {
     public static void main(String[] args) {
@@ -9,6 +9,8 @@ public class SunsetViews {
         // Write your code here.
         // Write your code here.
         // Write your code here.
+
+
         return new ArrayList<Integer>();
     }
 }
