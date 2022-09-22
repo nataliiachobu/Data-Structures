@@ -17,8 +17,9 @@ public class PrintMiddleNode {
             a=a.next; // single jump
             b=b.next.next;// double jump
         }
-       if(b==sll.tail) System.out.println(a.id);
-       else System.out.println(a.id+","+b.id);
+        // b is located either on tail or before tail
+       if(b==sll.tail) System.out.println(a.id); // on tail , odd number of nodes
+       else System.out.println(a.id+","+a.next.id); // before tail , even number of nodes
     }
 
 }
