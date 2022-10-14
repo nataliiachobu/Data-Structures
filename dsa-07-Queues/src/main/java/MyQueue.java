@@ -20,10 +20,11 @@ public class MyQueue<T> {
     T dequeue(){
         QNode frontNode;
         if(isEmpty()) throw new NoSuchElementException();
-        if (front==back){
+        // for one element in queue
+        if(front==back){
             frontNode=front;
             front=back=null;
-        }
+        } // now I have more than one element
         else{
             frontNode=front;
             front=front.next;
